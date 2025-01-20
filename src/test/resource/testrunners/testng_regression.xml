@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Open Kart Regression Suite" verbose="3" thread-count="5"
+	parallel="tests">
+
+	<listeners>
+		<listener
+			class-name="com.qa.openkart.listeners.ExtentReportListener" />
+		<listener
+			class-name="com.qa.openkart.listeners.TestAllureListener" />
+		<listener
+			class-name="com.qa.openkart.listeners.AnnotationTransformer" />
+	</listeners>
+
+	<test name="Login Page Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.openkart.tests.LoginPageTests" />
+		</classes>
+	</test>
+
+	<test name="Accounts Page Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.openkart.tests.AccountsPageTests" />
+		</classes>
+	</test>
+
+	<test name="Search Results Page Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.openkart.tests.SearchResultsTest" />
+		</classes>
+	</test>
+
+	<test name="Registration Page Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.openkart.tests.RegistrationPageTests" />
+		</classes>
+	</test>
+
+	<test name="Product info Page Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.openkart.tests.ProductPageInfoTest" />
+		</classes>
+	</test>
+
+
+</suite>
