@@ -1,0 +1,7 @@
+package com.qa.openkart.pages;
+
+public class KartPage {
+	
+	int i = 10;
+
+}
