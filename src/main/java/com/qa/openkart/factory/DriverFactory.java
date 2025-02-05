@@ -105,7 +105,7 @@ public class DriverFactory {
 				case "uat":
 					ip = new FileInputStream("./src/test/resources/config/config.uat.properties");
 					break;
-				case "production":
+				case "prod":
 					ip = new FileInputStream("./src/test/resources/config/config.properties");
 					break;
 				case "dev":
