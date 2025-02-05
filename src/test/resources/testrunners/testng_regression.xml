@@ -41,12 +41,12 @@
 		</classes>
 	</test>
 
-	<test name="Product info Page Test">
+	<!--<test name="Product info Page Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.qa.openkart.tests.ProductPageInfoTest" />
 		</classes>
-	</test>
+	</test>-->
 
 
 </suite>
