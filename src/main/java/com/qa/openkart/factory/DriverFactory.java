@@ -95,24 +95,24 @@ public class DriverFactory {
 
 			if (envName == null) {
 				System.out.println("No environment provided.. running in default settings");
-				ip = new FileInputStream("./src/test/resource/config/config.properties");
+				ip = new FileInputStream("./src/test/resources/config/config.properties");
 			} else {
 
 				switch (envName.toLowerCase().trim()) {
 				case "qa":
-					ip = new FileInputStream("./src/test/resource/config/config.qa.properties");
+					ip = new FileInputStream("./src/test/resources/config/config.qa.properties");
 					break;
 				case "uat":
-					ip = new FileInputStream("./src/test/resource/config/config.uat.properties");
+					ip = new FileInputStream("./src/test/resources/config/config.uat.properties");
 					break;
 				case "production":
-					ip = new FileInputStream("./src/test/resource/config/config.properties");
+					ip = new FileInputStream("./src/test/resources/config/config.properties");
 					break;
 				case "dev":
-					ip = new FileInputStream("./src/test/resource/config/config.dev.properties");
+					ip = new FileInputStream("./src/test/resources/config/config.dev.properties");
 					break;
 				case "stage":
-					ip = new FileInputStream("./src/test/resource/config/config.stage.properties");
+					ip = new FileInputStream("./src/test/resources/config/config.stage.properties");
 					break;
 
 				default:

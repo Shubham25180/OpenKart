@@ -10,7 +10,7 @@ import com.opencsv.exceptions.CsvException;
 public class CsvUtils {
 	
 	//comma separated values
-	private static final String CSV_PATH = ".//src//test//resource//testdata//";
+	private static final String CSV_PATH = ".//src//test//resources//testdata//";
 
 	public static Object[][] csvData (String fileName) {
 		
